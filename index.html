@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>💌 Carta para Abby 💞</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app" class="app">
+    <header class="encabezado app-header">
+      <h1 class="title">Para mi amor, Abby 💗</h1>
+      <p class="subtitle">Una carta que late con cada palabra...</p>
+      <nav class="sections-nav" aria-label="Navegación de secciones">
+        <button type="button" class="nav-btn" data-target="razones"></button>
+        <button type="button" class="nav-btn" data-target="comoNosConocimos"></button>
+        <button type="button" class="nav-btn" data-target="crecemosJuntos"></button>
+      </nav>
+    </header>
+
+    <main id="main" class="letter">
+      <section class="carta-seccion section" data-key="razones">
+        <h2 class="section-title">💖 Razones por las que te amo</h2>
+        <div class="message-viewport">
+          <p class="message-text" data-text>Porque en tu voz encuentro calma.</p>
+        </div>
+        <div class="botones">
+          <button class="btn-prev">⟵</button>
+          <button class="btn-next">⟶</button>
+        </div>
+      </section>
+
+      <section class="carta-seccion section" data-key="comoNosConocimos">
+        <h2 class="section-title">🎮 Cómo te conocí</h2>
+        <div class="message-viewport">
+          <p class="message-text" data-text>En Valorant, un día cualquiera, el destino me presentó a la chica más increíble del mundo...</p>
+        </div>
+        <div class="botones">
+          <button class="btn-prev">⟵</button>
+          <button class="btn-next">⟶</button>
+        </div>
+      </section>
+
+      <section class="carta-seccion section" data-key="crecemosJuntos">
+        <h2 class="section-title">🌹 Cómo crecemos juntos</h2>
+        <div class="message-viewport">
+          <p class="message-text" data-text>Cada día, cada conversación, cada risa contigo... me enseña a amar mejor.</p>
+        </div>
+        <div class="botones">
+          <button class="btn-prev">⟵</button>
+          <button class="btn-next">⟶</button>
+        </div>
+      </section>
+
+      <section class="carta-seccion section" data-key="celos">
+        <h2 class="section-title">🔥 Cuando te pones celosa</h2>
+        <div class="message-viewport">
+          <p class="message-text" data-text>Amo cómo incluso tus celos nacen del amor más puro, porque solo quieres quedarte en mi corazón.</p>
+        </div>
+        <div class="botones">
+          <button class="btn-prev">⟵</button>
+          <button class="btn-next">⟶</button>
+        </div>
+      </section>
+
+      <section class="carta-seccion section" data-key="promesas">
+        <h2 class="section-title">🌙 Lo que prometo</h2>
+        <div class="message-viewport">
+          <p class="message-text" data-text>Prometo seguir aprendiendo a amarte, sin límites, sin final, solo creciendo contigo.</p>
+        </div>
+        <div class="botones">
+          <button class="btn-prev">⟵</button>
+          <button class="btn-next">⟶</button>
+        </div>
+      </section>
+    </main>
+
+    <div class="controls">
+      <button id="btnPausa" class="ctrl-btn">⏸️ Pausar</button>
+    </div>
+
+    <footer class="app-footer">
+      <p class="final-text">“No importa cuánto cambie el mundo, ni los días que pasen... mi amor por ti, Abby, seguirá creciendo.”</p>
+      <p class="signature">— Tu chico 💞</p>
+    </footer>
+  </div>
+
+  <!-- Audio de fondo: controles visibles, autoplay y en bucle -->
+  <audio id="bg-audio" controls autoplay loop>
+    <source src="YOyTU.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio.
+  </audio>
+
+  <canvas id="hearts-bg"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
